@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Giphy Party!</title>
+  <!-- saw a bootstrap stylesheet in the solution and wanted to use it to help make this more presentable -->
+  <link rel="stylesheet" href="https://bootswatch.com/4/darkly/bootstrap.min.css">
+</head>
+
+<body>
+<!-- first we need to build a container using a div -->
+  <div class="contianer">
+    <h1 class="text-center mt-4 mb-4">GIF SEARCH!</h1>
+    <!-- make a form to so we can find our giphy and remove giphy -->
+    <form class="justify-content-center mb-4 form-inline">
+      <input type="text" id="search" name="search" placeholder="Enter Search Here" class="form-control">
+      <input type="submit" class="btn btn-primary ml-1" value="Search Giphy">
+      <button id="delete" class="btn btn-warning ml-2">Delete Images</button>
+    </form>
+  <!-- now we need a place to put our giphy/s we will use a div in the div-->
+  <div id="giphy-area" class="row">
+  </div>
+
+  </div>
+
+<script src="https://code.jquery.com/jquery-3.2.1.js"></script>
+<script src="https://unpkg.com/axios/dist/axios.js"></script>
+<script src="app.js"></script>
+</body>
+
+</html>
